@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gap-5">
+            <!-- Card 1 - Sobre -->
+            <div class="row">
+                <div class="card card:hover">
+                    <div class="card-body">
+                        <a href="projects/">
+                            <h5 class="card-title">Projetos</h5>
+                            <p class="card-text">
+                                Meus projetos acadêmicos e profissionais!                         
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 2 - CV Profissional -->
+            <div class="row">
+                <div class="card card:hover">
+                    <div class="card-body">
+                        <a href="resume/">
+                            <h5 class="card-title">CV</h5>
+                            <p class="card-text">Minhas informações de forma profissional.</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Card 3 - Projetos -->
+            <div class="row">
+                <div class="card card:hover">
+                    <div class="card-body">                        
+                        <a href="books/"> 
+                            <h5 class="card-title">Livros</h5>
+                            <p class="card-text">Experimente uma injeção de hábito e comece a ler livros!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+{% endblock %}

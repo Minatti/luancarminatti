@@ -5,7 +5,7 @@
     <ul>
       {% for project in projects %}
       <li>{{project.title}} {{project.description}} - {{project.image.url}} <br>
-        <img src="../../../media/projects/images/003.png" alt="">
+        <img src="{{project.image.url}}" alt="" class="d-block w-100">
       </li>
       {% endfor %}
     </ul>

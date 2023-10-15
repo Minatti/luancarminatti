@@ -7,6 +7,7 @@
     --color-dark: #0D1117;
     --color-steelblue: steelblue;
     --color-filipedeschamps: #333;
+    --color-slateblue: slateblue;
 }
 
 
@@ -40,14 +41,13 @@ input[type="checkbox"] {
 
 
 .card {
-    transition: transform 0.2s ease; /* Efeito de transição suave */
+    transition: transform 0.6s ease; /* Efeito de transição suave */
 }
 
 .card:hover {
-    /* background-color: black; */
     border: 1px solid var(--link-color-lucasmontano);
     color: var(--link-color-lucasmontano);      
-    transform: translateX(-5px); /* Desloca o card para cima ao passar o mouse */
+    transform: translateY(-5px); 
 }
 
 /* CSS personalizado para as setas do slider */
@@ -85,45 +85,18 @@ a:hover {
 }
 
 .dark a:hover {
-    color: var(--link-color-lucasmontano);
+    color: var(--color-steelblue);
 }
 
 
 .dark .card {
-    border: 0.5px solid var(--color-light);
-    transition: transform 0.2s ease; 
+    transition: transform 0.6s ease;
     background-color: var(--bg-printf-lucasmontano);
 }
 
 
-
-
-
-/* // X-Small devices (portrait phones, less than 576px)
-/* mobile first */
-
-@media(min-width: 320px) {
-    .carousel.item {
-        font-size: 8px;
-    }
-    h5 {
-        color: #1f6feb;
-        font-size: 0.2;
-    }
-    .carousel-caption .d-none .d-md-block {
-        display: block;
-    }
+a:hover.card-link {
+    color: var(--color-light);
 }
 
 
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 1200px) {}
-/* 
-
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}

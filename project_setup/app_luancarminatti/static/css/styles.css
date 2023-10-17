@@ -85,7 +85,7 @@ a:hover {
 }
 
 .dark a:hover {
-    color: var(--color-steelblue);
+    color: var(--link-color-lucasmontano);
 }
 
 

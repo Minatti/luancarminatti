@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-j=)c_@0veo1fbnw)y@7emw&t$f=^ob783!*!_-z$g5=0^jul9n
 DEBUG = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh', '127.0.0.1']
 
 
 # Application definition
@@ -70,7 +70,7 @@ ROOT_URLCONF = 'project_setup.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -131,7 +131,7 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 # Configuração para arquivos de mídia
 
 

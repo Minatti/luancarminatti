@@ -40,8 +40,6 @@ application = get_wsgi_application()
     4.1: Config dir files in settings.py
     4.2: URL = /static/
          DIRECTORY = /home/luancarminatti/luancarminatti.br/project_setup/app_luancarminatti/static/
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
